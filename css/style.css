@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F0EDEE; /* light theme */
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo h1 {
+    margin: 5px 0;
+    color: #2C666E; /* teal */
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SINGLE card block */
+.card {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #2C666E; /* teal */
+    background: white;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin: 12px 0;
+}
+
+.options span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #2C666E; /* teal */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.divider {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    margin: 15px 0;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 1px;
+    background: #ddd;
+    top: 50%;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social button {
+    flex: 1;
+    padding: 10px;
+    background: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #2C666E; /* teal */
+    font-size: 12px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+input, button {
+    transition: 0.2s;
+}
+
+.login-btn:active {
+    transform: scale(0.98);
+}
